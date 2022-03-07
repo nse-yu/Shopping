@@ -1,0 +1,373 @@
+@charset "UTF-8";
+@import url("default.css");
+
+body{
+    font-family: 'Reggae One', cursive;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+span{    
+    text-align: center;
+    
+    color: white;
+    font-size: 0.8em;
+    
+}
+a{
+    text-decoration: none;
+}
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex_stick{
+    justify-content: center;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.center{
+    margin: auto;
+}
+.box:hover{
+    border: 1px solid white;
+}
+.radius_left{
+    border-radius: 5px 0 0 5px;
+}
+.radius_right{
+    border-radius: 0 5px 5px 0;
+}
+.img_fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contents_grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_row{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_none{
+    display: block;
+    grid-template-columns: 1fr 0 0;
+}
+.box{
+    padding: 1rem;
+    margin: 1rem;
+    height: fit-content;
+
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    border-radius: 5px;
+}
+.line_highlight{
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.line_highlight:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+.link_highlight:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+.margin_wrapper{
+    margin: auto;
+    height: 100%;
+}
+/*---------header-----------*/
+
+#header_all{
+    color: white;
+    min-width: 1250px;
+}
+.header_up,.header_down{
+    width: 100%;
+}
+.header_up{
+    align-items: center;
+    height: 4rem;
+
+    background-color: rgba(1, 2, 14, 0.877);
+}
+/*ロゴ*/
+.header_logo{
+    left: 10px;
+    width: 15%;
+    height: 50%;
+}
+.header_logo .container{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.header_logo .container a{
+    justify-content: center;
+}
+.header_logo .logo_icon{
+    width: 45%;
+    height: 2rem;
+
+    background-image: url("../img/header_logo.png");
+    background-position: 2% 10%;
+    background-size: 280px;
+}
+.header_logo .logo_domain{
+    font-size: 1.1rem;
+}
+/*住所*/
+.header_address{
+    width: 17%;
+    justify-content: center;
+}
+.address_text{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.address_img{
+    background-image: url("../img/header_logo.png");
+    background-position: 18% 71%;
+    width: 18%;
+}
+.header_address .container{
+    justify-content: center;
+}
+/*検索*/
+.header_search{
+    width: 30%;
+}
+.header_search form{
+    height: 2.5rem;
+}
+.search_text{
+    margin-right: 0;
+    padding: 0 5px;
+    width: 80%;
+    
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgba(82, 77, 77, 0.397);
+}
+.search_button_wrapper{
+    width: 12%;
+    padding: 15px;
+    
+    background-color: burlywood;
+    background-image: url("../img/header_logo.png");
+    background-position: 0% 68.5%;
+}
+.search_button{
+    text-indent: -1000px;
+}
+.search_button_wrapper:hover{
+    background-color: rgba(222, 184, 135, 0.438);
+}
+.search_select{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.search_select_wrapper{
+    border-radius: 5px 0 0 5px;
+    width: 30%;
+}
+.select_current_wrapper{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+
+    background-color: rgb(231, 240, 237);
+}
+.select_current_wrapper span{
+    color: black;
+    margin: auto;
+}
+.select_img{
+    background-image: url("../img/icon.png");
+    background-position: 1.8% 10.6%;
+    margin: 0;
+    text-indent: -9999px;
+    width: 10%;
+    background-size: 300px;
+}
+/*カート*/
+.header_cart{
+    height: 100%;
+    width: 50px;
+
+    box-sizing: content-box;
+}
+.link_cart{
+    height: 100%;
+}
+.cart_count{
+    top: 10px;
+    right: 0;
+    left: 0;
+    bottom: 24px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: orange;
+}
+.cart_icon{
+    background-position: 4% 79%;
+    background-image: url("../img/header_logo.png");
+    bottom: 17px;
+    right: 0;
+    left: 5px;
+    height: 80%;
+
+    font-weight: bold;
+    text-indent: -9999px;
+}
+
+/*-----------------ヘッダー２---------------*/
+.header_down{
+    padding: 0;
+    padding-left: 5px;
+    justify-content: left;
+
+    font-size: 1.2rem;
+    background-color: rgba(29, 36, 46, 0.925);
+}
+.header_point{
+    margin: 0.5rem 0;
+}
+.header_point span{
+    margin-left: 5px;
+}
+.point_value{
+    color: orange;
+}
+.header_advertise{
+    width: 30%;
+    height: 100%;
+    right: 0;
+}
+/*------------main------------*/
+#main_all{
+    min-width: 1250px;
+    background-color: rgba(170, 170, 170, 0.452);
+}
+/*トップ画像*/
+#return, #next{
+    width: 10%;
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+}
+#return{
+    left: 0;
+}
+#next{
+    right: 0;
+}
+svg{
+    width: 100%;
+}
+svg:hover{
+    stroke: crimson;
+}
+.main_scroll_wrapper{
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    position: relative;
+}
+.resize{
+    width: 80%!important;
+    height: 40vh!important;
+}
+.img_list img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    transition: 1.2s;
+    z-index: 0;
+}
+.img_list{
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 1.8s;
+    width: 100%;
+}
+
+/*グリッド*/
+.main_card_grid img{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.main_card_grid span{
+    text-align: left;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.main_card_grid a{
+    font-weight: 700;
+    color: rgb(5, 116, 82);
+}
+
+/*-----------footer------------*/
+#footer_all{
+    height: 500px;
+}
+/*up*/
+.footer_up{
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(64, 61, 83, 0.877);
+}
+.footer_return_top_link{
+    vertical-align: middle;
+}
+#footer_all span{
+    font-size: 1.1rem;
+}
+/*down*/
+.footer_down{
+    background-color: rgba(37, 39, 59, 0.925);
+    height: 100%;
+}
+.footer_menu{
+    height: 100%;
+}
+.footer_copy{
+    height: 20%;
+    background-color: rgb(27, 27, 34);
+}
+.footer_down span{
+    bottom: 1rem;
+    right: 0;
+    left: 0;
+}

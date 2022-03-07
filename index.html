@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Nagazon</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/animate.js"></script>
+</head>
+<body>
+    <div id="shopping" class="flex_col">
+        <!--header部分-->
+        <header id="header_all" class="white_text">
+            <div class="header_up flex_row">
+                <div class="header_logo line_highlight">
+                    <div class="container">
+                        <a href="index.html" class="flex_row">
+                            <span class="logo_icon"></span>
+                            <span class="logo_domain">.jo.cp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header_address flex_row line_highlight">
+                    <span class="address_img"></span>
+                    <div class="container flex_col">
+                        <span>お届け先 [user] さん</span>
+                        <span class="address_text">[address]</span>
+                    </div>
+                </div>
+                <div class="header_search">
+                    <form action="#" method="post" class="flex_row flex_stick">
+                        <div class="search_select_wrapper radius_left relative">
+                            <div class="select_current_wrapper flex_row absolute radius_left">
+                                <span class="select_current">すべて</span>
+                                <span class="select_img">$</span>
+                            </div>
+                            <select name="search_cate" class="search_select">
+                                <option value="all">すべてのカテゴリー</option>
+                                <option value="audio-book">オーディオブック</option>
+                                <option value="device">Nagazonデバイス</option>
+                                <option value="store">Nandleストア</option>
+                                <option value="video">Primary Video</option>
+                                <option value="music">デジタルミュージック</option>
+                                <option value="book">本</option>
+                                <option value="dvd">DVD</option>
+                            </select>
+                        </div>
+                        <input type="text" name="search_text" class="search_text">
+                        <div class="search_button_wrapper radius_right">
+                            <input type="submit" value="検索" name="search_button" class="search_button">
+                        </div>
+                    </form>
+                </div>
+                <div class="header_history line_highlight">
+                    <a href="#" class="link_history flex_col">
+                        <span>返品もこちら</span>
+                        <span><b>注文履歴</b></span>
+                    </a>
+                </div>
+                <div class="header_cart relative line_highlight">
+                    <a href="index.html" class="link_cart">
+                        <span class="cart_count absolute">2</span>
+                        <span class="cart_icon absolute">|____|</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header_down flex_row relative">
+                <div class="header_point flex_row">
+                    <span>Nagazonポイント:</span>
+                    <span class="point_value">100</span>
+                </div>
+                <div class="header_advertise absolute">
+                    <img class="img_fit" src="img/christmas.png" alt="広告">
+                </div>
+            </div>
+        </header>
+        <!--main-->
+        <div id="main_all">
+            <div class="main_scroll_wrapper flex_row">
+                <span id="return" class="flex_col"><svg class="return_icon"xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
+                <div class="img_list">
+                    <img src="img/koji1.jfif" alt="koji1">
+                    <img src="img/koji2.jfif" alt="koji2">
+                    <img src="img/koji3.jfif" alt="koji3">
+                    <img src="img/koji4.jfif" alt="koji4">
+                </div>
+                <span id="next" class="flex_col"><svg class="next_icon" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span>
+            </div>
+            <div class="main_card_wrapper">
+                <div class="main_card_grid flex_col">
+                    <div class="contents_grid">
+                        <div class="card_1 img_fit flex_col box">
+                            <span>注目のタイムセール</span>
+                            <img class="card1_img" src="img/koji1.jfif" alt="card1">
+                            <div class="link_wrapper">
+                                <a class="link_timesale link_highlight" href="index.html">タイムセールをもっと見る</a>
+                            </div>
+                        </div>
+                        <div class="card_2 flex_col box">
+                            <span>対象の映画・TV番組が見放題</span>
+                            <img class="card2_img" src="img/koji2.jfif" alt="card2">
+                            <div class="link_wrapper">
+                                <a class="link_video link_highlight" href="index.html">Prime Videoを今すぐ観る</a>
+                            </div>
+                        </div>
+                        <div class="card_3 flex_col box">
+                            <span>Kindle電子書籍 無料で本を読もう</span>
+                            <img class="card3_img" src="img/koji3.jfif" alt="card3">
+                            <div class="link_wrapper">
+                                <a class="link_kindle link_highlight" href="index.html">無料タイトルをチェック</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_none">
+                        <div class="card_4 flex_col box">
+                            <span>こちらもおすすめ</span>
+                            <div class="recommend_list flex_row">
+                                <div><img src="img/koji2.jfif" alt="img"></div>
+                                <div><img src="img/koji3.jfif" alt="img"></div>
+                                <div><img src="img/koji4.jfif" alt="img"></div>
+                                <div><img src="img/koji5.jfif" alt="img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents_grid">
+                        <div class="card_5 flex_col box">
+                            <img class="card5_img" src="img/koji5.jfif" alt="card5">
+                            <div class="link_wrapper">
+                                <a class="link_timesale link_highlight" href="index.html">もっと見る</a>
+                            </div>
+                        </div>
+                        <div class="card_6 flex_col box">
+                            <img class="card6_img" src="img/koji6.jfif" alt="card6">
+                            <div class="link_wrapper">
+                                <a class="link_timesale link_highlight" href="index.html">タイムセールをもっと見る</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer部分-->
+        <div id="footer_all">
+            <div class="footer_up flex_col">
+                <a href="#shopping" class="footer_return_top_link">
+                    <span>トップへ戻る</span>
+                </a>
+            </div>
+            <div class="footer_down flex_col">
+                <div class="footer_menu">
+                    メニュー
+                </div>
+                <!--&copy;で©を表示-->
+                <div class="footer_copy relative">
+                    <span class="absolute"><small>&copy; コピーライト</small></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<div class="recommend_list flex_row">
+    <div><a href=""><img src="view/img/koji2.jfif" alt="img"></a></div>
+    <div><a href=""><img src="view/img/koji3.jfif" alt="img"></a></div>
+    <div><a href=""><img src="view/img/koji4.jfif" alt="img"></a></div>
+    <div><a href=""><img src="view/img/koji5.jfif" alt="img"></a></div>
+    <div><a href=""><img src="view/img/koji6.jfif" alt="img"></a></div>
+    <div><a href=""><img src="view/img/koji1.jfif" alt="img"></a></div>
+</div>
